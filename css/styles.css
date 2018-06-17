@@ -273,6 +273,11 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
 
 @media screen and (max-width:700px) {
   #neighborhoods-select, #cuisines-select {
@@ -296,11 +301,6 @@ nav h1 a {
   }
 }
 @media screen and (min-width:701px) {
-  #restaurants-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-  }
   #restaurants-list li {
     padding: 0px;
     margin:0px;
@@ -310,11 +310,7 @@ nav h1 a {
   }
 }
 @media screen and (min-width: 1000px){
-  #restaurants-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-  }
+  
   #restaurants-list li {
     padding: 0px;
     margin:0px;
