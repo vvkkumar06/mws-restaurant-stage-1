@@ -278,18 +278,16 @@ nav h1 a {
   overflow: hidden;
   position: relative;
   width: calc(100% - 4px);
-  display: flex;
-  flex-wrap: wrap;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 #reviews-list li p {
-  margin: 0 0 10px;
   padding: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   width: 100%;
 }
 #reviews-list li p:first-child, #reviews-list li p:nth-child(2){ 
@@ -297,11 +295,13 @@ nav h1 a {
   color: #fff;
   width: calc(50% - 40px);
   font-size: 18px;
+  height: 30px;
 }
 #reviews-list li p:nth-child(2){
   text-align:right;
   color: #aaa;
   font-size: 14px;
+  margin-top: 18px;
 }
 #reviews-list li p:nth-child(3){
   background: orange;
@@ -310,14 +310,18 @@ nav h1 a {
   border-radius: 5px;
   width: 100px;
   padding: 1px;
+  margin: 0px;
+  margin-top: 10px;
   margin-left: 20px;
   text-align:center;
+  height: 30px;
   text-transform: uppercase;
   box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
 }
 #reviews-list li p:last-of-type {
   padding-top: 5px;
   font-size: 14px;
+  margin-top: 10px;
 }
 #restaurant-hours td{
   color: #666;
@@ -392,6 +396,9 @@ table#restaurant-hours, p#restaurant-address {
     width: calc(50% - 10px);
     margin-left: auto;
     margin-right: auto;
+  }
+  #reviews-list li p:nth-child(3){
+    margin-top:10px;
   }
   p#restaurant-address {
     width: 100%;
