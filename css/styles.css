@@ -448,4 +448,7 @@ table#restaurant-hours, p#restaurant-address {
     order: -1;
     line-height:4em;
   }
+  #reviews-list li p:last-of-type {
+    font-size: 16px;
+  }
 }
