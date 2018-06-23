@@ -1,18 +1,7 @@
 let CACHE_NAME = 'mws-restaurant-reviews-v1';
 const urlsToCache = [
-    '/',
-    '/restaurant.html'
+    '/'
 ];
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(cache => {
-                console.log('Opened cache');
-                
-                return cache.addAll(urlsToCache);
-            })
-    )
-});
 
 self.addEventListener('fetch', event => {
     event.respondWith(
@@ -21,8 +10,22 @@ self.addEventListener('fetch', event => {
                 if (response) {
                     return response;
                 }
-                return fetch(event.request);
+                let fetchRequest = event.request.clone();
+
+                return fetch(fetchRequest).then(response => {
+                    if (!response || response.status !== 200 || response.type !== 'basic') {
+                        return response;
+                    }
+                    let responseToCache = response.clone();
+                    caches.open(CACHE_NAME)
+                        .then(cache => {
+                            console.log('Opened cache');
+                            return cache.put(event.request, responseToCache);
+                        });
+                    return response;
+
+                });
             }
-        )
+            )
     );
 });
