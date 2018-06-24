@@ -28,11 +28,11 @@
 
   <main id="maincontent" role="main">
     <section id="map-container" >
-      <div id="map" aria-label="map"></div>
+      <div id="map" aria-label="map" role="application"></div>
     </section>
     <section>
-      <div class="filter-options" aria-label="filter options" tabindex="0">
-        <h2>Filter Results</h2>
+      <div class="filter-options" aria-label="filter options" tabindex="0" role="menu">
+        <h2 role="definition">Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" role="list" aria-label='neighborhoods' onchange="updateRestaurants()">
           <option value="all" role="option">All Neighborhoods</option>
         </select>
