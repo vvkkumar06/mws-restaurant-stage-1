@@ -25,7 +25,7 @@ Clone the repo on local hard drive and unzip it somewhere.
 
 Python is used here to run the application.
 
-Use following command to run.
+Use following command:
 
 ```
 python -m http.server 8000
