@@ -359,6 +359,10 @@ table#restaurant-hours, p#restaurant-address {
   }
   img.restaurant-img {
     width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width:701px) {
@@ -368,6 +372,12 @@ table#restaurant-hours, p#restaurant-address {
     margin-top: 15px;
     width: calc( (100% - 10px) / 2);
     text-align:center;
+  }
+  img.restaurant-img { 
+    max-width: 600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1000px){
@@ -408,6 +418,12 @@ table#restaurant-hours, p#restaurant-address {
   table#restaurant-hours tr td {
     font-size: 24px;
   }
+  img#restaurant-img {
+    max-height: 400px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   #reviews-list li {
@@ -426,6 +442,8 @@ table#restaurant-hours, p#restaurant-address {
     width: calc(50% - 30px);
     order: 1;
     padding-left:20px;
+    max-height: 400px;
+    max-width: 700px;
   }
   table#restaurant-hours {
     width: calc(50% - 30px);
@@ -449,6 +467,6 @@ table#restaurant-hours, p#restaurant-address {
     line-height:4em;
   }
   #reviews-list li p:last-of-type {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
