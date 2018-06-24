@@ -23,15 +23,15 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
-      <h1>
-        <a href="/">Restaurant Reviews</a>
+    <nav role="navigation">
+      <h1 role="heading">
+        <a href="/" role="link">Restaurant Reviews</a>
       </h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
-      <li>
-        <a href="/">Home</a>
+    <ul id="breadcrumb" aria-label="Breadcrumb">
+      <li role="navigation">
+        <a href="/" role="link">Home</a>
       </li>
     </ul>
     <!-- End breadcrumb -->
@@ -40,24 +40,24 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role="main">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
+      <h2 id="restaurant-name" role="heading"></h2>
+      <img id="restaurant-img" role="banner">
       <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <p id="restaurant-address" role="note"></p>
+      <table id="restaurant-hours" role="list"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+      <ul id="reviews-list" role="list"></ul>
     </section>
     <!-- End reviews -->
   </main>
@@ -66,7 +66,7 @@
   <!-- Beginning footer -->
   <footer id="footer">
     Copyright (c) 2017
-    <a href="/">
+    <a href="/" role="link">
       <strong>Restaurant Reviews</strong>
     </a> All Rights Reserved.
   </footer>
