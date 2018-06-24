@@ -34,6 +34,7 @@ python -m http.server 8000
 
 ### Authors
 
-Vivek Kumar
+Vivek Kumar.
+
 See also the list of [contributors](https://github.com/vvkkumar06/mws-restaurant-stage-1/graphs/contributors) who participated in this project.
 
